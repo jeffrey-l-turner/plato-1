@@ -33,6 +33,8 @@ Usage : plato [options] -d <output_dir> <input files>
       The output directory
   -r, --recurse
       Recursively search directories
+  -e, --eslint : String
+      Specify an eslintrc file for eslint linting
   -l, --jshint : String
       Specify a jshintrc file for JSHint linting
   -t, --title : String
