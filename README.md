@@ -33,10 +33,14 @@ Usage : plato [options] -d <output_dir> <input files>
       The output directory
   -r, --recurse
       Recursively search directories
+  -e, --eslint : String
+      Specify an eslintrc file for eslint linting
   -l, --jshint : String
       Specify a jshintrc file for JSHint linting
   -t, --title : String
       Title of the report
+  -n, --noempty
+      Skips empty lines from line count
   -D, --date : String
       Time to use as the report date (seconds, > 9999999999 assumed to be ms)
 ```
@@ -81,7 +85,7 @@ plato.inspect(files, outputDir, {}, callback);
 ## Data sources
 
   - Complexity data by [Phil Booth](https://github.com/philbooth)'s [complexity-report](https://github.com/philbooth/complexityReport.js)
-  - Lint data from [jshint](https://github.com/jshint/jshint/)
+  - Lint data from [jshint](https://github.com/jshint/jshint/) and [eslint](https://github.com/eslint/eslint)
 
 ## Contributors
   - [Jarrod Overson](https://github.com/jsoverson)
